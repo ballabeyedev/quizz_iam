@@ -1,0 +1,313 @@
+body{
+    background-image: url('../img/img-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+.haut{
+    width: 100%;
+    color: aliceblue;
+    background-color: black;
+    margin: auto;
+    margin-bottom: 80px;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    font-size: 35px;
+
+}
+.image{
+    float: left;
+    position: absolute;
+    width: 60px;
+    height: 80px;
+    margin-left: 20px;
+
+}
+.beforebox{
+    position: relative;
+    margin-top: 400px;
+    width: 45%;
+    display: block;
+    color: white;
+    background-color: #51bfd0;
+    margin: auto;
+    z-index: 200;
+    text-align: left;
+    font-weight: bold;
+    text-indent: 25px;
+    padding: 25px 0px 25px 0px;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.beforebox2{
+  position: relative;
+  margin-top: 400px;
+  width: 45%;
+  display: block;
+  color: white;
+  background-color: #e60b0b;
+  margin: auto;
+  z-index: 200;
+  text-align: left;
+  font-weight: bold;
+  text-indent: 25px;
+  padding: 25px 0px 25px 0px;
+  font-size: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.box{
+	position: relative;
+	margin: auto;
+	height: 350px;
+	z-index: 200;
+	right: 0;
+	width:45%;
+	color:#666;
+	background: #f4f4f4;
+    margin-bottom: 100px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    overflow: hidden;
+}
+
+input {
+    margin-top: 50px;
+    font: 1em sans-serif;
+    width: 80%;
+    height: 60px;
+    box-sizing: border-box;
+    border: 1px solid rgb(147, 158, 153);
+    margin-left: 62px;
+    font-weight: bold;
+    text-indent: 30px;
+    border-radius: 5px;
+    background-color: #f0eef1;
+  }
+  input:focus, textarea:focus {
+    border-color: rgb(158, 147, 147);
+  }
+  a{
+      text-decoration: none;
+      font-weight: bold;
+      color: rgb(158, 147, 147);
+      font-size: large;
+      border: none;
+  }
+  button{
+    float: left;
+    background: #cfd8dc;
+    margin-top: 30px;
+    color: white;
+    font-size:20px;
+    margin-right: 0px;
+    margin-left: 62px;
+    width: 145px;
+    height: 55px;
+    background-color: #51bfd0;
+    display:block;
+    cursor:pointer;
+    border-radius: 2px;
+  }
+  button:active{
+    background: #51bfd0;
+    color: #263238;
+  }
+  button:hover{
+		background: #51bfd0;
+  color: #FFF;
+    -webkit-transition: all 0.4s;
+	transition: all 0.4s;
+}
+.logtof {
+    margin-top: 50px;
+    left: 82%;
+    width: 65px;
+    height: 55px;
+    position: absolute;
+  }
+  .logtoff{
+    margin-top: 20%;
+    margin-left: 21%;
+    width: 30%;
+    height: 50%;
+  }
+.inscription {
+    float: left;
+    margin-top: 30px;
+    width: 180px;
+    padding: 20px;
+    margin-left: 30px;
+}
+/* ########################################################################################################## */
+/* PArtie Inscription */
+.inscrire {
+  position: absolute;
+  height: auto;
+  margin-top: -80px;
+  width:85%;
+  left: 7.5%;
+	color:#666;
+  background: #ffffff;
+  border: 2px solid #e4e4e4 ;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  overflow: hidden;
+}
+.inshaut{
+  text-indent: 30px;
+  width: 65%;
+  height: auto;
+}
+strong{
+  font-size: 1.5em;
+  font-weight: 10px
+  ;
+}
+p{
+  margin-top: -5px;
+  font-size: 1.5em;
+  color: #919191;
+}
+.sepins{
+  size: 100px;
+  width: 100%;
+  color: #e4e4e4;
+  right: 50%;
+}
+label{
+  text-align: left;
+}
+.putins{
+  display: inline-block;
+  position: relative;
+  font: 1em sans-serif;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  width: 65%;
+  color: #8c8c8c;
+  height: 60px;
+  box-sizing: border-box;
+  border: 3px solid rgba(147, 158, 153, 0.651);
+  margin-left: 5px;
+  font-size: 30px;
+  font-weight: bold;
+  text-indent: 20px;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+label{
+  position: absolute;
+  margin-top: -10px;
+  margin-left: -20px;
+  text-align: left;
+  font-size: 20px;
+}
+.btn{
+  margin-left: 200px;
+  margin-bottom: 20px;
+}
+.inptof{
+  float: left;
+  background: #cfd8dc;
+  margin-top: 30px;
+  color: white;
+  font-size:20px;
+  margin-right: 0px;
+  margin-left: 62px;
+  width: 145px;
+  height: 15px;
+  background-color: #51bfd0;
+  display:block;
+  cursor:pointer;
+  border-radius: 2px;
+}
+.avatar{
+  position: absolute;
+  width: 28%;
+  left: 68%;
+  margin-top: -550px;
+  height: 300px;
+  border: 4px solid #51bfd0;
+  border-radius: 53%;
+}
+.input-file-container {
+  position: relative;
+  width: 0px;
+  margin-left: 120px;
+  text-align: left;
+}
+.input-file-trigger {
+  display: block;
+  padding: 0px 2px 5px 0px;
+  margin-left: 38%;
+  margin-top: -15px;
+  background: #51bfd0;
+  color: #fff;
+  text-indent: 0px;
+  font-size: 1.5em;
+  font-weight: bold;
+  transition: all .4s;
+  cursor: pointer;
+}
+.input-file {
+  position: absolute;
+  top: 0; left: 0;
+  width: 0px;
+  padding: 0px 0px 0px 0px;
+  opacity: 0;
+  cursor: pointer;
+}
+/* quelques styles d'interactions */
+.input-file:hover + .input-file-trigger,
+.input-file:focus + .input-file-trigger,
+.input-file-trigger:hover,
+.input-file-trigger:focus {
+  background: #34495E;
+  color: #51bfd0;
+}
+.input-file-trigger{
+    background-color: #51bfd0;;
+}
+/* styles du retour visuel */
+.file-return {
+  margin: 0;
+}
+.file-return:not(:empty) {
+  margin: 1em 0;
+}
+.file-return {
+  font-style: italic;
+  font-size: .9em;
+  font-weight: bold;
+}
+span{
+  color: #e60b0b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

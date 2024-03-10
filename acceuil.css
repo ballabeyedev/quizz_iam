@@ -1,0 +1,706 @@
+body{
+    background-color: #abacad;
+    height: 550px;
+}
+.haut{
+    width: 100%;
+    color: aliceblue;
+    background-color: black;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    font-size: 35px;
+    font-weight: bold;
+    height: 10%;
+}
+.image{
+    float: left;
+    position: absolute;
+    width: 60px;
+    height: 80px;
+    margin-left: 20px;
+
+}
+.container{
+    position: absolute;
+    width: 98.8%;
+    background-image: url('../img/img-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: auto;
+}
+.beforebox{
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 95%;
+    color: white;
+    background-color: #51bfd0;
+    font-weight: bold;
+    font-size: 20px;
+    height: 90px;
+    font-size: 20px;
+    overflow: hidden;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.afterbox{
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 95%;
+    height: 700px;
+    background-color: #f2f2f2;
+}
+.profil{
+	  height: 180px;
+    z-index: 200;
+  	width:100%;
+    background: linear-gradient(white,#51bfd0);
+    border-top-left-radius:5px ;
+    border-top-right-radius:5px ;
+    box-shadow: 0 10px 20px #8f8787, 0 6px 6px #969191;
+}
+.promenu{
+    float: left;
+    height: auto;
+    margin-top: 3.5%;
+    margin-left: 1.5%;
+    width:35%;
+}
+.menu{
+    height: 250px;
+    margin-top: 0px;
+	width:100%;
+    background: #ffffff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 10px 20px #f2f2f2, 0 6px 6px #f2f2f2;
+}
+.sous {
+    text-align: left;
+    list-style: none;
+    width: 100%;
+    margin-bottom: 7%;
+    text-indent: 25px;
+    height: 25px;
+
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+    border: none;
+}
+.sous a {
+    display: block;
+    z-index: 200;
+    font-size: 20px;
+    text-decoration: none;
+    color: #8d8070;
+    padding: 10px 0px;
+    border-bottom: none;
+}
+.sous a:hover {
+    border-bottom: none;
+    text-decoration: none;
+    background-color:#f8f3f0;
+    border-left: 5px solid #098a04;
+
+}
+.active {
+    border-bottom: none;
+    text-decoration: none;
+    background-color:#f8f3f0;
+    border-left: 5px solid #098a04;
+}
+.icons{
+    position: absolute;
+    margin-top: -34px;
+    left: 33%;
+    height: 25px;
+}
+.header-text{
+    float: left;
+    width: 40%;
+    padding: 30px;
+    margin-left: 30%;
+    text-align: center;
+}
+.disconnect{
+    position: absolute;
+    left: 75%;
+    margin-top: 20px;
+    background: #cfd8dc;
+    color: white;
+    font-size:20px;
+    width: 165px;
+    height: 45px;
+    background-color: #3aded7;
+    cursor:pointer;
+    border-radius: 5px;
+}
+/* PLATEAU CONTENU */
+.plateau{
+    float: left;
+    width: 60%;
+    margin-left: 2%;
+    margin-top: 2%;
+    height: 600px;
+    background-color: #ffffff;
+    border: 2px solid #e4e4e4 ;
+    border-radius: 10px;
+}
+span{
+  position: absolute;
+  color: red;
+  margin-left: 6%;
+  margin-top: -20px;
+}
+.avatarerror{
+  margin-left: 22%;
+  margin-top: 1px;
+}
+.inshaut{
+    text-indent: 30px;
+    width: 65%;
+    height: auto;
+  }
+  strong{
+    font-size: 1em;
+    font-weight: 10px;
+  }
+  p{
+    margin-top: -5px;
+    font-size: 1em;
+    color: #919191;
+    width: 70%;
+    padding: 10px 0px 20px 0px;
+    border-bottom: 5px solid #e4e4e4 ;
+  }
+  label{
+    text-align: left;
+    color: #8c8c8c;
+  }
+  .text-inscrire{
+      margin-top: 10px;
+      font-weight: bold;
+  }
+  .message-inscrire{
+    font-size: 1em;
+    color: #919191;
+    width: 75%;
+    padding: 5px 0px 10px 0px;
+    border-bottom: 2px solid #e4e4e4 ;
+    margin-bottom: 10px;
+  }
+  .putins{
+    display: inline-block;
+    position: relative;
+    font: 1em sans-serif;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 60%;
+    height: 40px;
+    box-sizing: border-box;
+    border: 3px solid rgba(147, 158, 153, 0.651);
+    margin-left: 5px;
+    font-weight: bold;
+    text-indent: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
+  label{
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -20px;
+    text-align: left;
+    font-size: 20px;
+  }
+  .btn{
+    height: 40px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+  }
+  .inptof{
+    float: left;
+    background: #cfd8dc;
+    margin-top: 30px;
+    color: white;
+    font-size:20px;
+    margin-right: 0px;
+    margin-left: 62px;
+    width: 145px;
+    height: 15px;
+    background-color: #51bfd0;
+    display:block;
+    cursor:pointer;
+    border-radius: 2px;
+  }
+  button{
+    float: left;
+    margin-top: 30px;
+    color: white;
+    font-size:20px;
+    margin-right: 0px;
+    margin-left: 62px;
+    width: 145px;
+    height: 55px;
+    background-color: #51bfd0;
+    outline-style:none;
+    cursor:pointer;
+    border-radius: 2px;
+    background-color: ;
+  }
+  .avatarInscription{
+    position: absolute;
+    width: 20%;
+    top: 150px;
+    left: 70%;
+    height: 23%;
+    border: 4px solid #51bfd0;
+    border-radius: 53%;
+    background-image: url('../img/profil.png');
+  }
+  .avatar{
+    position: absolute;
+    margin-top: 1%;
+    width: 150px;
+    height: 146px;
+    margin-left: 3%;
+    border: 2px solid silver;
+    border-radius: 53%;
+   
+  }
+  .avatartext{
+    position: absolute;
+    left: 75%;
+    margin-top: 141px;
+    width: 130px;
+    height: 20px;
+  }
+  .tof{
+    margin-top: 5%;
+    width: 135px;
+    height: 131px;
+    margin-left: 4.5%;
+    border-radius: 53%;
+   
+  }
+  .nom{
+      position: absolute;
+      margin-top: 5%;
+      width: 20%;
+      margin-left: 18%;
+      color: white;
+      font-size: 25px;
+      font-weight: bold;
+      border: none;
+
+  }
+  .prenom{
+    position: absolute;
+    margin-top: 3%;
+    width: 20%;
+    margin-left: 15%;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+}
+.liste-form{
+    float: left;
+    width: 50%;
+    margin-left: 2%;
+    margin-top: 1%;
+    margin-right: 5%;
+    height: auto;
+    background-color: #ffffff;
+    border: 2px solid #e4e4e4 ;
+    border-radius: 10px;
+}
+.liste-table{
+    border: 2px solid #51bfd0;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 20px;
+}
+
+th{
+    width: 30%;
+    text-align: left;
+    padding: 5px 0px 2px 20px;
+    color: #8d8070;
+    font-size: 20px;
+    font-weight: bold;
+}
+td{
+    text-align: left;
+    width: 30%;
+    padding: 5px 0px 2px 20px;
+    color: #8d8070;
+    font-size: 20px;
+    font-weight: 5px; 
+}
+.style-score{
+  width: 25%;
+  text-align: right;
+  margin-right: 30%;
+  padding: 0px 18% 0px 5px;
+}
+caption{
+    text-align: center;
+    width: 80%;
+    padding: 30px 0px 10px 20px;
+    color: #8d8070;
+    text-indent: 7%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ .input-file-container {
+    position: relative;
+    width: 0px;
+    margin-left: 120px;
+    text-align: left;
+  }
+  .input-file-trigger {
+    display: block;
+    padding: 0px 0px;
+    margin-left: 200px;
+    margin-top: -15px;
+    background: #51bfd0;
+    color: #fff;
+    text-indent: 0px;
+    font-size: 1em;
+    font-weight: bold;
+    transition: all .4s;
+    cursor: pointer;
+  }
+  .input-file {
+    position: absolute;
+    top: 0; left: 0;
+    width: 0px;
+    padding: 0px 0px 0px 0px;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .input-file:hover + .input-file-trigger,
+  .input-file:focus + .input-file-trigger,
+  .input-file-trigger:hover,
+  .input-file-trigger:focus {
+    background: #34495E;
+    color: #51bfd0;
+  }
+  .input-file-trigger{
+      background-color: #51bfd0;
+  }
+  .file-return {
+    margin: 0;
+  }
+  .file-return:not(:empty) {
+    margin: 1em 0;
+  }
+  .file-return {
+    font-style: italic;
+    font-size: .9em;
+    font-weight: bold;
+  }
+  .addQuestion{
+    float: left;
+    width: 60%;
+    margin-left: 2%;
+    margin-top: 2%;
+    height: auto;
+    background-color: #ffffff;
+    border: 2px solid #e4e4e4 ;
+    border-radius: 10px;
+  }
+  .list-text{
+    margin-top: 10px;
+    height: 40px;
+    width: 100%;
+  }
+  .text1{
+    float: left;
+    width: 65%;
+    height: 100%;
+    color: #8c8c8c;
+    padding: 5px 0px 0px 0px;
+    text-indent: 35%;
+    font-size: 30px;
+  }
+  .inputnombre{
+    float: left;
+    width: 8%;
+    height: 10%;
+    color: #8c8c8c;
+    font-weight: bold;
+    font-size: 20px;
+    text-indent: 20px;
+  }
+  .bouton{
+    float: left;
+    width: 10%;
+    margin-top: 0px;
+    margin-left: 3%;
+    height: 10%;
+  }
+  .num-question{
+    margin-left: 70%;
+    width: 50px;
+    height: 80%;
+    font-size: 20px;
+    font-weight: bold;
+    text-indent: 20px;
+  }
+  .okbtn{
+    margin-left: 83%;
+    margin-top: -40px;
+    width: 40px;
+    height: 90%;
+  }
+  .ask-text{
+    font-weight: bold;
+    font-size: 200%;
+    padding: 10px;
+    text-indent: 15px;
+    color: #51bfd0;
+  }
+  .ask-form{
+    width: 96%;
+    height: auto;
+    margin-left: 2%;
+    border: 2px solid #51bfd0;
+    border-radius: 12px;
+  }
+  .kest-form{
+    width: 75%;
+    margin-top: 1%;
+    height: auto;
+    border: none;
+    margin-left: 20%;
+    background-color: #f7f7f7;
+    box-shadow: 0px 2px 2px #2796ae, 0 2px 2px #2796ae;
+  }
+  .label-form{
+    position: absolute;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 2%;
+    margin-top: 3%;
+  }
+  .point-form{
+    width: 60px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    margin-left: 29%;
+    margin-top: 5%;
+    text-indent: 10px;
+    background-color: #f7f7f7;
+    box-shadow: 0px 2px 2px #2796ae, 0 2px 2px #2796ae;
+    
+  }
+  .nature-form{
+    width: 60%;
+    height: 40px;
+    margin-top: 4%;
+    font-size: 20px;
+    border: none;
+    margin-left: 30%;
+    background-color: #f7f7f7;
+    text-indent: 20px;
+    box-shadow: 0px 2px 2px #2796ae, 0 2px 2px #2796ae;
+  }
+  .plus-form{
+    background-image: url('../img/Icones/ic-ajout-réponse.png');
+    background-size:cover ;
+    float: right;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    margin-top: 4%;
+    margin-right: 1%;
+  }
+  .nature-label{
+    position: absolute;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 2%;
+    margin-top: 2.5%;
+    text-decoration: none;
+    border: none;
+  }
+  .reponse-form{
+    width: 55%;
+    height: 40px;
+    margin-top: 4%;
+    font-size: 20px;
+    margin-left: 20%;
+    border: none;
+    background-color: #f7f7f7;
+    text-indent: 20px;
+    box-shadow: 0px 2px 2px #2796ae, 0 2px 2px #2796ae;
+  }
+  .choix-multiple{
+    float: right;
+    margin-top: 5%;
+    width: 30px;
+    margin-right: 3%;
+    height: 30px;
+    box-shadow: 0px 0px 2px #2796ae, 0px 2px 0px #2796ae;
+    background-color: #f7f7f7;
+  }
+  .choix-unique{
+    position: relative;
+    float: right;
+    margin-top: -35px;
+    width: 30px;
+    margin-right: 18%;
+    text-align: center;
+    height: 30px;
+    font-weight: bold;
+    font-weight: 290px;
+    cursor: pointer;
+    border-radius: 60%;
+    box-shadow: 0px 0px 2px #6f7070, 0 2px 2px #6b6c6d;
+    background-color: #f7f7f7;
+  }
+  .supprimer-form{
+    position: absolute;
+    background-image: url('../img/Icones/ic-supprimer.png');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    margin-top: -35px;
+    left: 85%;
+    cursor: pointer;
+    width: 40px;
+    height: 50px;
+  }
+  .enregistrer-form{
+    position: relative;
+    height: 40px;
+    margin-top: 0px;
+    margin-left: 55%;
+    margin-top: 2%;
+    margin-bottom: 10px;
+  }
+  .error-form{
+    color: red;
+    text-align: center;
+    left: 45%;
+    padding: 10px 0px 0px 0px;
+    font-size: 20px;
+  }
+.plateauQuestion{
+  float: left;
+  width: 60%;
+  margin-left: 2%;
+  margin-top: 2%;
+  height: auto;
+  background-color: #ffffff;
+  border: 2px solid #e4e4e4 ;
+  border-radius: 10px;
+}
+.formlist-form{
+  width: 100%;
+  height: auto;
+}
+.tablelist-form{
+  width: 96%;
+  height: 88%;
+  margin-top: 10%;
+  margin-left: 2%;
+  border: 2px solid #51bfd0;
+  border-radius: 12px;
+}
+.boutinput{
+  background-color: royalblue;
+  width: 100%;
+  height: 10%;
+}
+.list-text{
+  margin-top: 10px;
+  height: 40px;
+  width: 100%;
+}
+.text1{
+  float: left;
+  width: 65%;
+  margin-top: 2.5%;
+  height: 100%;
+  color: #8c8c8c;
+  padding: 5px 0px 0px 0px;
+  text-indent: 40%;
+  font-size: 30px;
+}
+.inputnombre{
+  float: left;
+  width: 8%;
+  margin-top: 3%;
+  height: 60%;
+  color: #8c8c8c;
+  font-weight: bold;
+  font-size: 20px;
+  text-indent: 20px;
+}
+.bouton{
+  float: left;
+  width: 8%;
+  margin-top: 0px;
+  margin-left: 3%;
+  margin-top: 3%;
+  height: 60%;
+}
+.num-question{
+  margin-left: 70%;
+  width: 50px;
+  height: 80%;
+  font-size: 20px;
+  font-weight: bold;
+  text-indent: 20px;
+}
+.titleKest{
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  margin-top: 1%;
+  margin-left: 2%;
+  padding: 0px;
+  color: #8d8070;
+}
+.radioKest{
+  width: 5%;
+  height: 5%;
+  margin-left: 3%;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #51bfd0;
+  border: 5px solid #51bfd0;
+}
+.reponse-input{
+  width: 35%;
+  height: 20px;
+  margin-left: 3%;
+  margin-top: -10px;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: white;
+}
+.titleReponse{
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  margin-left: 2%;
+  padding: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+

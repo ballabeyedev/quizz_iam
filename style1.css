@@ -1,0 +1,68 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px;
+    padding: 0;
+    background-color: #f8f9fa;
+
+}
+
+.Titre{
+    border: 2px solid black;
+    margin-left: 10px;
+}
+
+.login {
+    width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.Email, .Passwd {
+    margin-bottom: 20px;
+}
+
+.Email input, .Passwd input {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    outline: none;
+}
+
+.Email input:focus, .Passwd input:focus {
+    border-color: #007bff;
+}
+
+.button {
+    background-color: #17c5ab;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 150px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.inscription {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+a {
+    color: #28a745;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
