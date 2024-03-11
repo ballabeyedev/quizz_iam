@@ -33,18 +33,20 @@ $list = $query->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscription</title>
     <link rel="stylesheet" href="inscription.css">
     <style>
-        .h3{
-            text-decoration: underline;
-            margin-left: 450px;
-        }
+    .h3 {
+        text-decoration: underline;
+        margin-left: 450px;
+    }
     </style>
 </head>
+
 <body>
     <div class="header">
         <img src="image/logo.png" alt="">
@@ -62,80 +64,73 @@ $list = $query->fetchAll(PDO::FETCH_ASSOC);
         <br>
         <input type="password" name="passwd" id="passwd" placeholder="Mot de Passe" required>
         <br>
-        <input type="password" name="confirm_passwd" id="confirm_passwd" placeholder="Confirmer le Mot de Passe" required>
+        <input type="password" name="confirm_passwd" id="confirm_passwd" placeholder="Confirmer le Mot de Passe"
+            required>
         <br>
-        <select name="profils_joueur" id="profils_joueur" required>
-        <option value="" disabled selected>Sélectionnez un profil</option>
-        <option value="joueur">joueur</option>
-        </select><br>
-        <br>
-        <div id="error-message"></div> 
+        <div id="error-message"></div>
         <button type="submit" id="envoyer">S'Inscrire →</button>
     </form>
     <script>
-        const form = document.querySelector('.login');
-        const nom = document.getElementById('nom');
-        const prenom = document.getElementById('prenom');
-        const login = document.getElementById('login');
-        const passwd = document.getElementById('passwd');
-        const confirmPasswd = document.getElementById('confirm_passwd');
-        const profils_joueur = document.getElementById('profils_joueur');
-        const errorsDiv = document.getElementById('error-message');
-        const button = document.getElementById('envoyer');
+    const form = document.querySelector('.login');
+    const nom = document.getElementById('nom');
+    const prenom = document.getElementById('prenom');
+    const login = document.getElementById('login');
+    const passwd = document.getElementById('passwd');
+    const confirmPasswd = document.getElementById('confirm_passwd');
+    const profils_joueur = document.getElementById('profils_joueur');
+    const errorsDiv = document.getElementById('error-message');
+    const button = document.getElementById('envoyer');
 
-        form.addEventListener('input', validateForm);
+    form.addEventListener('input', validateForm);
 
-        function resetForm() {
-            form.reset();
+    function resetForm() {
+        form.reset();
+    }
+
+    function validateForm() {
+        errorsDiv.innerHTML = '';
+        let hasErrors = false;
+
+        if (nom.value === '') {
+            displayError('Le champ nom est obligatoire.');
+            hasErrors = true;
         }
 
-        function validateForm() {
-            errorsDiv.innerHTML = '';
-            let hasErrors = false;
-
-            if (nom.value === '') {
-                displayError('Le champ nom est obligatoire.');
-                hasErrors = true;
-            }
-
-            if (prenom.value === '') {
-                displayError('Le champ prénom est obligatoire.');
-                hasErrors = true;
-            }
-
-            if (login.value === '') {
-                displayError('Le champ login est obligatoire.');
-                hasErrors = true;
-            }
-
-            if (passwd.value === '') {
-                displayError('Le champ mot de passe est obligatoire.');
-                hasErrors = true;
-            }
-
-            if (confirmPasswd.value === '') {
-                displayError('Le champ de confirmation du mot de passe est obligatoire.');
-                hasErrors = true;
-            }
-
-            if (passwd.value !== confirmPasswd.value) {
-                displayError('Les mots de passe ne correspondent pas.');
-                hasErrors = true;
-            }
-            if (profils_joueur.value==='') {
-                displayError('Le profils du joueur est obligatoire .');
-                hasErrors = true;
-            }
-
-            button.disabled = hasErrors;
+        if (prenom.value === '') {
+            displayError('Le champ prénom est obligatoire.');
+            hasErrors = true;
         }
 
-        function displayError(errorMessage) {
-            const errorPara = document.createElement('p');
-            errorPara.classList.add('error');
-            errorPara.textContent = errorMessage;
-            errorsDiv.appendChild(errorPara);
+        if (login.value === '') {
+            displayError('Le champ login est obligatoire.');
+            hasErrors = true;
         }
+
+        if (passwd.value === '') {
+            displayError('Le champ mot de passe est obligatoire.');
+            hasErrors = true;
+        }
+
+        if (confirmPasswd.value === '') {
+            displayError('Le champ de confirmation du mot de passe est obligatoire.');
+            hasErrors = true;
+        }
+
+        if (passwd.value !== confirmPasswd.value) {
+            displayError('Les mots de passe ne correspondent pas.');
+            hasErrors = true;
+        }
+
+        button.disabled = hasErrors;
+    }
+
+    function displayError(errorMessage) {
+        const errorPara = document.createElement('p');
+        errorPara.classList.add('error');
+        errorPara.textContent = errorMessage;
+        errorsDiv.appendChild(errorPara);
+    }
     </script>
 </body>
+
 </html>
